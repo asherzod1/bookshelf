@@ -295,7 +295,7 @@ const Books: React.FC = () => {
                 }
             </div>
             <Modal title="Enter book isbn" open={createBookModal} onOk={createBook} onCancel={cancelCreateBook} centered>
-                <Input onChange={(e)=>isbnChange(e)} placeholder="Enter book isbn" ></Input>
+                <Input value={isbn} onChange={(e)=>isbnChange(e)} placeholder="Enter book isbn" ></Input>
             </Modal>
             <Modal title="Change book status" open={editBookModal} onOk={editBook} onCancel={cancelEditBook} centered>
                 <Select
